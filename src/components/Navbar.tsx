@@ -62,6 +62,7 @@ const Navbar = () => {
             
             <nav className="hidden md:flex items-center gap-6">
               <Link to="/" className="text-blue-700 hover:text-blue-800 transition-colors font-bold">Home</Link>
+              <Link to="/webapp" className="text-blue-700 hover:text-blue-800 transition-colors font-bold">Try WebApp</Link>
               <Link to="/partners" className="text-blue-700 hover:text-blue-800 transition-colors font-bold">Become a Partner</Link>
               <Link to="/resources/faq" className="text-blue-700 hover:text-blue-800 transition-colors font-bold">FAQ</Link>
             </nav>
@@ -100,6 +101,7 @@ const Navbar = () => {
           >
             <nav className="container mx-auto p-4 flex flex-col gap-4">
               <Link to="/" className="text-blue-700 hover:text-blue-800 transition-colors py-2 px-4 rounded-md hover:bg-gray-100 font-bold">Home</Link>
+              <Link to="/webapp" className="text-blue-700 hover:text-blue-800 transition-colors py-2 px-4 rounded-md hover:bg-gray-100 font-bold">Try WebApp</Link>
               <Link to="/partners" className="text-blue-700 hover:text-blue-800 transition-colors py-2 px-4 rounded-md hover:bg-gray-100 font-bold">Become a Partner</Link>
               <Link to="/resources/faq" className="text-blue-700 hover:text-blue-800 transition-colors py-2 px-4 rounded-md hover:bg-gray-100 font-bold">FAQ</Link>
               <div onClick={openInviteDialog} className="text-gray-700 hover:text-blue-700 transition-colors py-2 px-4 rounded-md hover:bg-gray-100 cursor-pointer">
