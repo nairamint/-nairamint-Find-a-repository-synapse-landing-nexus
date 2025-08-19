@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import { AuthProvider } from "./contexts/AuthContext";
+import { WebAppLayout } from "./components/webapp/WebAppLayout";
 
 // Legal pages
 import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
@@ -53,6 +54,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/webapp" element={<WebAppLayout />} />
             <Route path="/partners" element={<Partners />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/ask-dara" element={<AskDara />} />
