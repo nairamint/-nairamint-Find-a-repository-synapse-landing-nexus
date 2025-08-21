@@ -36,6 +36,9 @@ import Careers from "./pages/company/Careers";
 import Features from "./pages/platform/Features";
 import Solutions from "./pages/platform/Solutions";
 
+// Agent pages
+import NexusAgentPage from "./pages/agents/NexusAgentPage";
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -82,6 +85,9 @@ const App = () => (
             {/* Platform Routes */}
             <Route path="/platform/features" element={<Features />} />
             <Route path="/platform/solutions" element={<Solutions />} />
+            
+            {/* Agent Routes */}
+            <Route path="/agents/nexus" element={<NexusAgentPage />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
